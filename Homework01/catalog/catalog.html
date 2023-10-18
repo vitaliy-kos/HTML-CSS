@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        header,
+        main {
+            max-width: 900px;
+            margin: auto;
+        }
+        header ul {
+            width: 300px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        header ul li {
+            display: inline-block;
+        }
+        .products {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product {
+            width: calc(33.33% - 10px);
+            padding: 10px;
+            border: 1px solid grey;
+            border-radius: 20px;
+            margin: 0 10px;
+        }
+        .product img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .product h3,
+        .product p {
+            text-align: center;
+        }
+    </style>
+    <header>
+        <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </header>
+    <main>
+       <h1>Каталог</h1>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quos aut voluptatibus a numquam dolorum velit suscipit quisquam minima asperiores! Temporibus explicabo veritatis deleniti libero! Odio itaque tempore voluptatibus laborum quisquam? Dolorum harum veritatis cumque dolor a, dicta deleniti tempora, sint architecto in accusantium, distinctio minus quibusdam quod corrupti assumenda. Velit commodi reprehenderit veritatis nulla fuga sequi cumque! Dolorem atque alias laborum deleniti tenetur? Quaerat eum culpa, odit quis maxime explicabo voluptate deleniti nesciunt recusandae et velit hic error, perferendis eos obcaecati! Recusandae ullam laudantium assumenda, quidem possimus reprehenderit optio sed delectus et odit facere ut repellat voluptatem, fugit dolorem soluta accusamus minus veniam placeat, quibusdam dignissimos doloremque dolor asperiores! Dolorum aut corporis iusto, voluptas exercitationem veritatis quo architecto consectetur recusandae odio, sint laboriosam ullam minus dolorem. Ipsam vel molestias minima distinctio repellendus tempora perferendis inventore autem, impedit, sit quia tenetur tempore, accusamus veniam nihil error numquam incidunt. Esse, quaerat.</p>
+       <div class="products">
+            <div class="product">
+                <img src="../img/croissants-with-cooking-paper.jpg" alt="">
+                <h3>Продукт 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae similique quibusdam ducimus magni cum ipsam unde voluptas in accusamus dolore officiis aperiam vero est voluptate, fugiat tempore minus expedita molestias.</p>
+            </div>
+            <div class="product">
+                <img src="../img/side-view-pizza-with-pepper-tomato-pizza-slices-board-cookware.jpg" alt="">
+                <h3>Продукт 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae similique quibusdam ducimus magni cum ipsam unde voluptas in accusamus dolore officiis aperiam vero est voluptate, fugiat tempore minus expedita molestias.</p>
+            </div>
+            <div class="product">
+                <img src="../img/slice-tasty-tart-with-jam.jpg" alt="">
+                <h3>Продукт 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae similique quibusdam ducimus magni cum ipsam unde voluptas in accusamus dolore officiis aperiam vero est voluptate, fugiat tempore minus expedita molestias.</p>
+            </div>
+       </div>
+    </main>
+</body>
+</html>
