@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('fonts/gilroy-medium.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('fonts/gilroy-bold.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy-Medium;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    height: 128px;
+    justify-content: space-between;
+}
+.horizontal-menu {
+    list-style: none;
+}
+.logo-container {
+    margin-top: 45px;
+}
+.logo-container a {
+    display: flex;
+    align-items: center;
+}
+.logo-name {
+    margin-left: 14px;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.logo-name span {
+    color: #F25822;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.menu-container {
+    display: flex;
+    margin-top: 45px;
+    height: 40px;
+    align-items: center;
+    margin-right: 154px;
+}
+.menu-container li {
+    position: relative;
+    margin: 0 18px;
+}
+.menu-container li:first-of-type {
+    margin-left: 0;
+}
+.menu-container li:last-of-type {
+    margin-right: 0;
+}
+.menu-container li a {
+    color: #000;
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.menu-container li.active a {
+    color: #F25822;
+}
+.menu-container li.drop-down::after {
+    content: url(img/uiw_down.svg);
+    position: absolute;
+    top: 1px;
+    right: -13px;
+    width: 10px;
+    height: 10px;
+}
+.main-menu {
+    display: flex;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+/* Main banner */
+.main-banner {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 140px;
+}
+.main-banner .text-block,
+.main-banner .picture-block {
+    width: 50%;
+}
+.main-banner h1 {
+    margin-top: 40px;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.main-banner p {
+    margin-top: 25px;
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.main-banner .btn-block {
+    height: 50px;
+    display: flex;
+    margin-top: 37px;
+}
+.main-banner .btn-block .main-btn {
+    display: block;
+    width: fit-content;
+    width: -webkit-fit-content;
+    float: left;
+    padding: 16px 35px;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.main-banner .btn-block .sml-btn {  
+    display: flex;
+    align-items: center;
+    margin-left: 72px;
+    color: #AAA;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.main-banner .picture-block img {
+    max-width: 544px;
+}
+
+
+
+
+/* Brand owl */
+.brand-owl {
+    display: flex;
+    margin: 96px 0;
+}
+
+.brand-owl ul {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+
