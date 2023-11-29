@@ -110,9 +110,7 @@ header .container {
     cursor: pointer;
 }
 .main-menu li:hover .dropdown,
-.main-menu li:active .dropdown,
-.main-menu .dropdown:hover,
-.main-menu .dropdown:active {
+.main-menu .dropdown:hover {
     display: flex;
 }
 ul.main-menu li:not(:last-child) {
