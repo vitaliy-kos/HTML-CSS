@@ -391,6 +391,8 @@ footer {
     font-family: "Lato-Light";
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 .top-footer .right-block input[type="submit"] {
     background: #F16D7F;
@@ -401,6 +403,8 @@ footer {
     font-family: "Lato-Light";
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     margin-left: -3px;
     cursor: pointer;
 }
