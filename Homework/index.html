@@ -3,78 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Магазин</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <div class="container">
+        <div class="top-header">
 
-            <div class="logo-container">
-                <a href="#">
-                    <img src="img/logo.png" alt="">
-                </a>
-            </div>
+            <div class="container">
 
-            <div class="search-container">
-                <a href="#">
-                    <img src="img/search.svg" alt="">
-                </a>
-            </div>
+                <div class="logo-container">
+                    <a href="#">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="logo-container__name">BRAN<span class="pink">D</span></div>
+                </div>
 
-            <div class="menu-container">
-                <ul class="main-menu horizontal-menu">
-                    <li>
-                        <a href="#"><img src="img/burger.svg" alt=""></a>
-                        <div class="dropdown">
-                            <h3>MENU</h3>
-                            <h4>MAN</h4>
-                            <ul class="menu">
-                                <li>Accessories</li>
-                                <li>Bags</li>
-                                <li>Denim</li>
-                                <li>T-Shirts</li>
-                            </ul>
-                            <h4>WOMAN</h4>
-                            <ul class="menu">
-                                <li>Accessories</li>
-                                <li>Jackets & Coats</li>
-                                <li>Polos</li>
-                                <li>T-Shirts</li>
-                                <li>Shirts</li>
-                            </ul>
-                            <h4>KIDS</h4>
-                            <ul class="menu">
-                                <li>Accessories</li>
-                                <li>Jackets & Coats</li>
-                                <li>Polos</li>
-                                <li>T-Shirts</li>
-                                <li>Shirts</li>
-                                <li>Bags</li>
-                            </ul>
+                <form action="" method="get" class="form-search">
+                    <div class="search-container">
+                        <div class="search-container__block">
+                            <details>
+                                <summary>Browse <i class="fa fa-caret-down" aria-hidden="true"></i></summary>
+                                <div class="popup">Раскрывающийся текст</div>
+                            </details>
+                            <input type="text" placeholder="Search for Item...">
+                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
-                    </li>
-                    <li class="user">
-                        <a href="#"><img src="img/user.svg" alt=""></a>
-                    </li>
-                    <li class="cart">
-                        <a href="#"><img src="img/cart.svg" alt=""></a>
-                        <span class="cart-count">5</span>
-                    </li>
+                    </div>
+                </form>
+
+                <div class="menu-container">
+                    
+                    <a href="#"><img src="img/cart.svg" alt=""></a>
+
+                    <a href="#" class="btn btn-pink">My Account <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-header">
+            <div class="container">
+                <ul>
+                    <li>Home</li>
+                    <li>Man</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Accoseriese</li>
+                    <li>Featured</li>
+                    <li>Hot Deals</li>
                 </ul>
             </div>
-
         </div>
     </header>
 
     <section class="main-banner">
         <div class="container">
-
-            <div class="picture-block">
-                <img src="img/mb-left-pic.png" alt="picture-block">
-            </div>
 
             <div class="text-block">
                 <div class="tb_inner"><span class="bold">THE BRAND</span><br>OF LUXERIOUS <span class="pink">FASHION</span></div>
@@ -85,26 +72,29 @@
 
     <section class="pictures-block">
         <div class="container">
-            <div class="row">
+            <div class="column">
 
-                <div class="pb-pic small-block" style="background-image: url('img/pb-pic-1.png');">
-                    <div class="text">30% OFF<br><span class="pink pb-pink">FOR WOMEN</span></div>
-                </div>
-
-                <div class="pb-pic small-block" style="background-image: url('img/pb-pic-2.png');">
+                <div class="pb-pic men" style="background-image: url('img/pb-pic-2.png');">
                     <div class="text">HOT DEAL<br><span class="pink pb-pink">FOR MEN</span></div>
                 </div>
+                
+                <div class="pb-pic access" style="background-image: url('img/pb-pic-wide.png');">
+                    <div class="text">LUXIROUS & TRENDY<br><span class="pink pb-pink">ACCESORIES</span></div>
+                </div>
+                
+            </div>
 
-                <div class="pb-pic small-block" style="background-image: url('img/pb-pic-3.png');">
+            <div class="column">
+
+                <div class="pb-pic women" style="background-image: url('img/pb-pic-1.png');">
+                    <div class="text">30% OFF<br><span class="pink pb-pink">WOMEN</span></div>
+                </div>
+
+                <div class="pb-pic kids" style="background-image: url('img/pb-pic-3.png');">
                     <div class="text">NEW ARRIVALS<br><span class="pink pb-pink">FOR KIDS</span></div>
                 </div>
 
-            </div>
-
-            <div class="row">
-                <div class="pb-pic wide-block" style="background-image: url('img/pb-pic-wide.png');">
-                    <div class="text">LUXIROUS & TRENDY<br><span class="pink pb-pink">ACCESORIES</span></div>
-                </div>
+                
             </div>
 
         </div>
@@ -124,14 +114,13 @@
 
                 <div class="fi-item">
                     <div class="fi-photo">
-                        <img src="img/featured-1.jpg" alt="">
+                        <img src="img/featured-1.png" alt="">
                         <div class="hover">
                             <a href="#">Add to Cart</a>
                         </div>
                     </div>
                     <div class="desc">
-                        <h4>ELLERY X M'O CAPSULE</h4>
-                        <p class="grey-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <h4>Mango People T-shirt</h4>
                         <div class="price">$52.00</div>
                     </div>
                 </div>
@@ -144,22 +133,20 @@
                         </div>
                     </div>
                     <div class="desc">
-                        <h4>ELLERY X M'O CAPSULE</h4>
-                        <p class="grey-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <h4>Mango People T-shirt</h4>
                         <div class="price">$52.00</div>
                     </div>
                 </div>
 
                 <div class="fi-item">
                     <div class="fi-photo">
-                        <img src="img/featured-3.png" alt="">
+                        <img src="img/featured-3.jpg" alt="">
                         <div class="hover">
                             <a href="#">Add to Cart</a>
                         </div>
                     </div>
                     <div class="desc">
-                        <h4>ELLERY X M'O CAPSULE</h4>
-                        <p class="grey-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <h4>Mango People T-shirt</h4>
                         <div class="price">$52.00</div>
                     </div>
                 </div>
@@ -172,8 +159,7 @@
                         </div>
                     </div>
                     <div class="desc">
-                        <h4>ELLERY X M'O CAPSULE</h4>
-                        <p class="grey-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <h4>Mango People T-shirt</h4>
                         <div class="price">$52.00</div>
                     </div>
                 </div>
@@ -186,8 +172,7 @@
                         </div>
                     </div>
                     <div class="desc">
-                        <h4>ELLERY X M'O CAPSULE</h4>
-                        <p class="grey-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <h4>Mango People T-shirt</h4>
                         <div class="price">$52.00</div>
                     </div>
                 </div>
@@ -200,8 +185,33 @@
                         </div>
                     </div>
                     <div class="desc">
-                        <h4>ELLERY X M'O CAPSULE</h4>
-                        <p class="grey-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <h4>Mango People T-shirt</h4>
+                        <div class="price">$52.00</div>
+                    </div>
+                </div>
+
+                <div class="fi-item">
+                    <div class="fi-photo">
+                        <img src="img/featured-7.png" alt="">
+                        <div class="hover">
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h4>Mango People T-shirt</h4>
+                        <div class="price">$52.00</div>
+                    </div>
+                </div>
+
+                <div class="fi-item">
+                    <div class="fi-photo">
+                        <img src="img/featured-8.png" alt="">
+                        <div class="hover">
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h4>Mango People T-shirt</h4>
                         <div class="price">$52.00</div>
                     </div>
                 </div>
@@ -209,7 +219,7 @@
             </div>
 
             <div class="fi-btn-all">
-                <a href="#" class="fi-btn">Browse All Product</a>
+                <a href="#" class="btn btn-pink">Browse All Product <i class="fa fa-long-arrow-alt-right" aria-hidden="true"></i></a>
             </div>
 
 
@@ -218,21 +228,41 @@
 
     <section class="advantages">
         <div class="container">
-            <div class="advantage-item">
-                <img src="img/advantage1.svg" alt="advantage1">
-                <h2>Free Delivery</h2>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+
+            <div class="col-left">
+                <div class="text-adv">30% <span
+                    class="pink">OFFER</span> 
+                    <br><span class="small">FOR WOMEN</span></div>
             </div>
-            <div class="advantage-item">
-                <img src="img/advantage2.svg" alt="advantage2">
-                <h2>Sales & discounts</h2>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+
+            <div class="col-right">
+
+                <div class="advantage-item">
+                    <img src="img/advantage1.svg" alt="advantage1">
+                    <div class="advantage-item__text">
+                        <h2>Free Delivery</h2>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                </div>
+
+                <div class="advantage-item">
+                    <img src="img/advantage2.svg" alt="advantage2">
+                    <div class="advantage-item__text">
+                        <h2>Sales & discounts</h2>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                </div>
+
+                <div class="advantage-item">
+                    <img src="img/advantage3.svg" alt="advantage3">
+                    <div class="advantage-item__text">
+                        <h2>Quality assurance</h2>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="advantage-item">
-                <img src="img/advantage3.svg" alt="advantage3">
-                <h2>Quality assurance</h2>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-            </div>
+
         </div>
     </section>
     
@@ -241,7 +271,11 @@
             <div class="container">
                 <div class="left-block">
                     <img src="img/footer-foto.png" alt="">
-                    <p class="quotes">“Vestibulum quis porttitor dui! Quisque<br> viverra nunc mi, <span>a pulvinar purus<br> condimentum</span>“</p>
+                    <div>
+                        <div class="quotes">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<br> a pulvinar purus condimentum a. Aliquam condimentum<br>mattis neque sed pretium”</div>
+                        <div class="name"><span class="pink">Bin Burhan</span>
+                        <br>Dhaka, Bd</div>
+                    </div>
                 </div>
                 <div class="right-block">
                     <h2>SUBSCRIBE</h2>
@@ -252,6 +286,89 @@
                     </form>
                 </div>
             </div>
+        </div>
+
+        <div class="middle-footer">
+            <div class="container">
+            
+                <div class="column first">
+                    <div class="logo-container">
+                        <a href="#">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                        <div class="logo-container__name">BRAN<span class="pink">D</span></div>
+                    </div>
+
+                    <div class="text-container">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. 
+                    <br><br>Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</div>
+                </div>
+
+                <div class="column second">
+                    <div class="heading">COMPANY</div>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">How It Works</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="column third">
+                    <div class="heading">INFORMATION</div>
+                    <ul>
+                        <li>
+                            <a href="#">Tearms & Condition</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">How to Buy</a>
+                        </li>
+                        <li>
+                            <a href="#">How to Sell</a>
+                        </li>
+                        <li>
+                            <a href="#">Promotion</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="column fourth">
+                    <div class="heading">SHOP CATEGORY</div>
+                    <ul>
+                        <li>
+                            <a href="#">Men</a>
+                        </li>
+                        <li>
+                            <a href="#">Women</a>
+                        </li>
+                        <li>
+                            <a href="#">Child</a>
+                        </li>
+                        <li>
+                            <a href="#">Apparel</a>
+                        </li>
+                        <li>
+                            <a href="#">Brows All</a>
+                        </li>
+                    </ul>
+                </div>
+            
+            </div>
+
         </div>
 
         <div class="bottom-footer">
