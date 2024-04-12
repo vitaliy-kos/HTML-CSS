@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин</title>
+    <title>Страница товара</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="single-product">
 
     <header>
         <div class="top-header">
@@ -237,209 +237,129 @@
             </div>
         </div>
     </header>
-
-    <section class="main-banner">
+    
+    <section class="breadcrumbs">
         <div class="container">
-
-            <div class="text-block">
-                <div class="tb_inner"><span class="bold">THE BRAND</span><br>OF LUXERIOUS <span class="pink">FASHION</span></div>
-            </div>
-
+            <div class="name pink">New Arrivals</div>
+            <div class="path">Home / Men / <span class="pink">New Arrivals</span></div>
         </div>
     </section>
 
-    <section class="pictures-block">
-        <div class="container">
-            <div class="column">
-
-                <div class="pb-pic men" style="background-image: url('img/pb-pic-2.png');">
-                    <div class="text">HOT DEAL<br><span class="pink pb-pink">FOR MEN</span></div>
-                </div>
-                
-                <div class="pb-pic access" style="background-image: url('img/pb-pic-wide.png');">
-                    <div class="text">LUXIROUS & TRENDY<br><span class="pink pb-pink">ACCESORIES</span></div>
-                </div>
-                
+    <section class="product">
+        <div class="arrows">
+            <div class="arrow arrow-left">
+                <div class="icon"></div>
             </div>
-
-            <div class="column">
-
-                <div class="pb-pic women" style="background-image: url('img/pb-pic-1.png');">
-                    <div class="text">30% OFF<br><span class="pink pb-pink">WOMEN</span></div>
-                </div>
-
-                <div class="pb-pic kids" style="background-image: url('img/pb-pic-3.png');">
-                    <div class="text">NEW ARRIVALS<br><span class="pink pb-pink">FOR KIDS</span></div>
-                </div>
-
-                
+            <div class="arrow arrow-right">
+                <div class="icon"></div>
             </div>
-
         </div>
+        <div class="container">
+            <img src="img/product-main.png" alt="product">
+        </div>
+    </section>
 
+    <section class="product-description">
+        <div class="container">
+            <div class="mini-heading">WOMEN COLLECTION</div>
+            <div class="main-heading">Moschino Cheap And Chic</div>
+            <div class="desc">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</div>
+            <div class="charact">
+                <div class="char">MATERIAL: <span>COTTON</span></div>
+                <div class="char">DESIGNER: <span>BINBURHAN</span></div>
+            </div>
+            <div class="price">$561</div>
+            <div class="options">
+                <div class="option">
+                    <label for="color">CHOOSE COLOR</label>
+                    <div class="select-wrapper">
+                        <i class="fa fa-square"></i>
+                        <select id="color">
+                            <option value="">RED</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="option">
+                    <label for="size">CHOOSE SIZE</label>
+                    <div class="select-wrapper">
+                        <select id="size">
+                            <option value="">XXL</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="option">
+                    <label for="quantity">QUANTITY</label>
+                    <input type="text" id="quantity" value="2">
+                </div>
+            </div>
+            
+            <a href="#" class="button"><img src="img/cart-pink.svg" alt="">Add to Cart</a>
+        </div>
     </section>
         
     <section class="featured-items">
         <div class="container">
 
             <div class="row column center">
-                <h2>Fetured Items</h2>
-
-                <p class="grey-text">Shop for items based on what we featured in this week</p>
+                <h2 class="uppercase">you may like also</h2>
             </div>
 
             <div class="row fi-items">
 
                 <div class="fi-item">
                     <div class="fi-photo">
-                        <img src="img/featured-1.png" alt="">
+                        <img src="img/single-feature1.png" alt="">
                         <div class="hover">
                             <a href="#">Add to Cart</a>
                         </div>
                     </div>
                     <div class="desc">
-                        <h4>Mango People T-shirt</h4>
+                        <h4>BLAZE LEGGINGS</h4>
                         <div class="price">$52.00</div>
                     </div>
                 </div>
 
                 <div class="fi-item">
                     <div class="fi-photo">
-                        <img src="img/featured-2.png" class="backgroud" alt="">
+                        <img src="img/single-feature2.png" class="backgroud" alt="">
                         <div class="hover">
                             <a href="#">Add to Cart</a>
                         </div>
                     </div>
                     <div class="desc">
-                        <h4>Mango People T-shirt</h4>
+                        <h4>ALEXA SWEATER</h4>
                         <div class="price">$52.00</div>
                     </div>
                 </div>
 
                 <div class="fi-item">
                     <div class="fi-photo">
-                        <img src="img/featured-3.jpg" alt="">
+                        <img src="img/single-feature3.png" alt="">
                         <div class="hover">
                             <a href="#">Add to Cart</a>
                         </div>
                     </div>
                     <div class="desc">
-                        <h4>Mango People T-shirt</h4>
+                        <h4>AGNES TOP</h4>
                         <div class="price">$52.00</div>
                     </div>
                 </div>
 
                 <div class="fi-item">
                     <div class="fi-photo">
-                        <img src="img/featured-4.png" alt="">
+                        <img src="img/single-feature4.png" alt="">
                         <div class="hover">
                             <a href="#">Add to Cart</a>
                         </div>
                     </div>
                     <div class="desc">
-                        <h4>Mango People T-shirt</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
-
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/featured-5.png" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <h4>Mango People T-shirt</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
-
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/featured-6.png" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <h4>Mango People T-shirt</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
-
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/featured-7.png" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <h4>Mango People T-shirt</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
-
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/featured-8.png" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <h4>Mango People T-shirt</h4>
+                        <h4>SYLVA SWEATER</h4>
                         <div class="price">$52.00</div>
                     </div>
                 </div>
 
             </div>
 
-            <div class="fi-btn-all">
-                <a href="#" class="btn btn-pink">Browse All Product <i class="fa fa-long-arrow-alt-right" aria-hidden="true"></i></a>
-            </div>
-
-
-        </div>
-    </section>
-
-    <section class="advantages">
-        <div class="container">
-
-            <div class="col-left">
-                <div class="text-adv">30% <span
-                    class="pink">OFFER</span> 
-                    <br><span class="small">FOR WOMEN</span></div>
-            </div>
-
-            <div class="col-right">
-
-                <div class="advantage-item">
-                    <img src="img/advantage1.svg" alt="advantage1">
-                    <div class="advantage-item__text">
-                        <h2>Free Delivery</h2>
-                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </div>
-                </div>
-
-                <div class="advantage-item">
-                    <img src="img/advantage2.svg" alt="advantage2">
-                    <div class="advantage-item__text">
-                        <h2>Sales & discounts</h2>
-                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </div>
-                </div>
-
-                <div class="advantage-item">
-                    <img src="img/advantage3.svg" alt="advantage3">
-                    <div class="advantage-item__text">
-                        <h2>Quality assurance</h2>
-                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </div>
-                </div>
-
-            </div>
 
         </div>
     </section>
