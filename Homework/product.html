@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Страница товара</title>
+    <title>Фильтр товаров</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
 
 <body class="single-product">
@@ -245,121 +248,400 @@
         </div>
     </section>
 
-    <section class="product">
-        <div class="arrows">
-            <div class="arrow arrow-left">
-                <div class="icon"></div>
-            </div>
-            <div class="arrow arrow-right">
-                <div class="icon"></div>
-            </div>
-        </div>
+    <section class="filter-product">
         <div class="container">
-            <img src="img/product-main.png" alt="product">
+
+            <div class="sidebar">
+                <details open>
+                    <summary>Category <i class="fa fa-caret-down" aria-hidden="true"></i></summary>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="#">Bags</a>
+                            </li>
+                            <li>
+                                <a href="#">Denim</a>
+                            </li>
+                            <li>
+                                <a href="#">Hoodies & Sweatshirts</a>
+                            </li>
+                            <li>
+                                <a href="#">Jackets & Coats</a>
+                            </li>
+                            <li>
+                                <a href="#">Pants</a>
+                            </li>
+                            <li>
+                                <a href="#">Polos</a>
+                            </li>
+                            <li>
+                                <a href="#">Shirts</a>
+                            </li>
+                            <li>
+                                <a href="#">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="#">Shorts</a>
+                            </li>
+                            <li>
+                                <a href="#">Sweaters & Knits</a>
+                            </li>
+                            <li>
+                                <a href="#">T-Shirts</a>
+                            </li>
+                            <li>
+                                <a href="#">Tanks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>BRAND <i class="fa fa-caret-down" aria-hidden="true"></i></summary>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="#">Bags</a>
+                            </li>
+                            <li>
+                                <a href="#">Denim</a>
+                            </li>
+                            <li>
+                                <a href="#">Hoodies & Sweatshirts</a>
+                            </li>
+                            <li>
+                                <a href="#">Jackets & Coats</a>
+                            </li>
+                            <li>
+                                <a href="#">Pants</a>
+                            </li>
+                            <li>
+                                <a href="#">Polos</a>
+                            </li>
+                            <li>
+                                <a href="#">Shirts</a>
+                            </li>
+                            <li>
+                                <a href="#">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="#">Shorts</a>
+                            </li>
+                            <li>
+                                <a href="#">Sweaters & Knits</a>
+                            </li>
+                            <li>
+                                <a href="#">T-Shirts</a>
+                            </li>
+                            <li>
+                                <a href="#">Tanks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>DESIGNER <i class="fa fa-caret-down" aria-hidden="true"></i></summary>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="#">Bags</a>
+                            </li>
+                            <li>
+                                <a href="#">Denim</a>
+                            </li>
+                            <li>
+                                <a href="#">Hoodies & Sweatshirts</a>
+                            </li>
+                            <li>
+                                <a href="#">Jackets & Coats</a>
+                            </li>
+                            <li>
+                                <a href="#">Pants</a>
+                            </li>
+                            <li>
+                                <a href="#">Polos</a>
+                            </li>
+                            <li>
+                                <a href="#">Shirts</a>
+                            </li>
+                            <li>
+                                <a href="#">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="#">Shorts</a>
+                            </li>
+                            <li>
+                                <a href="#">Sweaters & Knits</a>
+                            </li>
+                            <li>
+                                <a href="#">T-Shirts</a>
+                            </li>
+                            <li>
+                                <a href="#">Tanks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+                
+            </div>
+
+            <div class="right-panel">
+                <div class="filter">
+                    <div class="col">
+                        <h4>Trending now</h4>
+                        <div class="single-filter">Bohemian    |    Floral    |    Lace 
+                            Floral    |    Lace    |    Bohemian</div>
+                    </div>
+                    <div class="col">
+                        <h4>SIZE</h4>
+                        <div class="sizes">
+                            <div class="form-group">
+                                <input type="checkbox" id="id-1">
+                                <label for="id-1">XXS</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="id-2">
+                                <label for="id-2">XS</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="id-3">
+                                <label for="id-3">S</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="id-4">
+                                <label for="id-4">M</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="id-5">
+                                <label for="id-5">L</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="id-6">
+                                <label for="id-6">XL</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="id-7">
+                                <label for="id-7">XXL</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h4>PRICE</h4>
+                        <div class="rangebox">
+                            <div id="slider-range"></div>
+                            <div class="values">
+                                <div class="minval">$52</div>
+                                <div class="maxval">$400</div>
+                            </div>
+                        </div>
+                        <script>
+                            $( function() {
+                                $("#slider-range").slider({
+                                range: true,
+                                min: 0,
+                                max: 700,
+                                values: [ 52, 400 ],
+                                slide: function( event, ui ) {
+                                    $( ".minval" ).html( "$" + ui.values[ 0 ]);
+                                    $( ".maxval" ).html( "$" + ui.values[ 1 ]);
+                                }
+                                });
+                                
+                            } );
+                        </script>
+                    </div>
+                </div>
+                <div class="sort">
+                    <div class="sort-one">
+                        <div class="option">
+                            <label for="color">Sort By</label>
+                            <div class="select-wrapper">
+                                <select id="color">
+                                    <option value="">Name</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sort-two">
+                        <div class="option">
+                            <label for="show">Show</label>
+                            <div class="select-wrapper">
+                                <select id="show">
+                                    <option value="">09</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products">
+
+                    <div class="fi-item">
+                        <div class="fi-photo">
+                            <img src="img/products-1.png" alt="">
+                            <div class="hover">
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h4>BLAZE LEGGINGS</h4>
+                            <div class="price">$52.00</div>
+                        </div>
+                    </div>
+
+                    <div class="fi-item">
+                        <div class="fi-photo">
+                            <img src="img/products-2.png" alt="">
+                            <div class="hover">
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h4>BLAZE LEGGINGS</h4>
+                            <div class="price">$52.00</div>
+                        </div>
+                    </div>
+
+                    <div class="fi-item">
+                        <div class="fi-photo">
+                            <img src="img/products-3.png" alt="">
+                            <div class="hover">
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h4>BLAZE LEGGINGS</h4>
+                            <div class="price">$52.00</div>
+                        </div>
+                    </div>
+
+                    <div class="fi-item">
+                        <div class="fi-photo">
+                            <img src="img/products-4.png" alt="">
+                            <div class="hover">
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h4>BLAZE LEGGINGS</h4>
+                            <div class="price">$52.00</div>
+                        </div>
+                    </div>
+
+                    <div class="fi-item">
+                        <div class="fi-photo">
+                            <img src="img/products-5.png" alt="">
+                            <div class="hover">
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h4>BLAZE LEGGINGS</h4>
+                            <div class="price">$52.00</div>
+                        </div>
+                    </div>
+
+                    <div class="fi-item">
+                        <div class="fi-photo">
+                            <img src="img/products-6.png" alt="">
+                            <div class="hover">
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h4>BLAZE LEGGINGS</h4>
+                            <div class="price">$52.00</div>
+                        </div>
+                    </div>
+
+                    <div class="fi-item">
+                        <div class="fi-photo">
+                            <img src="img/products-7.png" alt="">
+                            <div class="hover">
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h4>BLAZE LEGGINGS</h4>
+                            <div class="price">$52.00</div>
+                        </div>
+                    </div>
+
+                    <div class="fi-item">
+                        <div class="fi-photo">
+                            <img src="img/products-8.png" alt="">
+                            <div class="hover">
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h4>BLAZE LEGGINGS</h4>
+                            <div class="price">$52.00</div>
+                        </div>
+                    </div>
+
+                    <div class="fi-item">
+                        <div class="fi-photo">
+                            <img src="img/products-9.png" alt="">
+                            <div class="hover">
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h4>BLAZE LEGGINGS</h4>
+                            <div class="price">$52.00</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="paginate">
+                    <div class="paginate_block">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></i></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6...20</a></li>
+                            <li class="active"><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="view_all">
+                        <a href="#" class="btn button">View All</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <section class="product-description">
+    <section class="advantages-product">
         <div class="container">
-            <div class="mini-heading">WOMEN COLLECTION</div>
-            <div class="main-heading">Moschino Cheap And Chic</div>
-            <div class="desc">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</div>
-            <div class="charact">
-                <div class="char">MATERIAL: <span>COTTON</span></div>
-                <div class="char">DESIGNER: <span>BINBURHAN</span></div>
+            <div class="advantage-item">
+                <img src="img/advantage1.svg" alt="advantage1">
+                <h2>Free Delivery</h2>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
             </div>
-            <div class="price">$561</div>
-            <div class="options">
-                <div class="option">
-                    <label for="color">CHOOSE COLOR</label>
-                    <div class="select-wrapper">
-                        <select id="color">
-                            <option value="">RED</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="option">
-                    <label for="size">CHOOSE SIZE</label>
-                    <div class="select-wrapper">
-                        <select id="size">
-                            <option value="">XXL</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="option">
-                    <label for="quantity">QUANTITY</label>
-                    <input type="text" id="quantity" value="2">
-                </div>
+            <div class="advantage-item">
+                <img src="img/advantage2.svg" alt="advantage2">
+                <h2>Sales & discounts</h2>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
             </div>
-            
-            <a href="#" class="button"><img src="img/cart-pink.svg" alt="">Add to Cart</a>
-        </div>
-    </section>
-        
-    <section class="featured-items">
-        <div class="container">
-
-            <div class="row column center">
-                <h2 class="uppercase">you may like also</h2>
+            <div class="advantage-item">
+                <img src="img/advantage3.svg" alt="advantage3">
+                <h2>Quality assurance</h2>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
             </div>
-
-            <div class="row fi-items">
-
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/single-feature1.png" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <h4>BLAZE LEGGINGS</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
-
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/single-feature2.png" class="backgroud" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <h4>ALEXA SWEATER</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
-
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/single-feature3.png" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <h4>AGNES TOP</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
-
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/single-feature4.png" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <h4>SYLVA SWEATER</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
-
-            </div>
-
-
         </div>
     </section>
     
