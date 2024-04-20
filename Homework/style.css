@@ -623,6 +623,170 @@ header .bottom-header ul li .mega-box.right::before {
   border-radius: 3px;
 }
 
+/* Checkout */
+.checkout {
+  margin: 80px 0;
+}
+.checkout .container {
+  display: flex;
+  flex-direction: column;
+}
+.checkout details {
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+}
+.checkout details summary {
+  padding: 30px 0;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+.checkout details summary::-webkit-details-marker {
+  display: none;
+}
+.checkout details .info {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout details .info .col {
+  margin-top: 10px;
+  padding-left: 35px;
+  width: 50%;
+}
+.checkout details .info .register {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222222;
+}
+.checkout details .info .register_desc {
+  margin-top: 15px;
+  margin-bottom: 34px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
+}
+.checkout details .info .form-group {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 10px;
+}
+.checkout details .info .form-group input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  margin-right: 9px;
+}
+.checkout details .info .form-group input[type=radio] + label {
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
+}
+.checkout details .info .form-group input[type=radio] + label::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1.5px solid #111;
+  margin-right: 9px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border-radius: 100%;
+}
+.checkout details .info .form-group input[type=radio] + label::after {
+  content: "";
+  display: none;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 9px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border-radius: 100%;
+  position: absolute;
+}
+.checkout details .info .form-group input[type=radio]:checked + label::after {
+  display: inline-block;
+  background: #111;
+  width: 8px;
+  height: 8px;
+  left: 2.5px;
+}
+.checkout details .info .form-group label span {
+  color: #ff0d0d;
+}
+.checkout details .info .form-group input[type=text] {
+  display: block;
+}
+.checkout details .info .form-group input[type=text] {
+  width: 390px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+.checkout details .info .req {
+  color: #ff0d0d;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.checkout details .info .login_block {
+  display: flex;
+}
+.checkout details .info .login_block .forgot {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+  margin-left: 32px;
+  margin-top: 50px;
+}
+.checkout details .info .form-group.text {
+  margin-bottom: 23px;
+}
+.checkout details .info .form-group.text input {
+  margin-top: 10px;
+}
+.checkout details .info .register.two {
+  margin-top: 25px;
+}
+.checkout details .info .advan {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
+  margin-bottom: 10px;
+}
+.checkout details .info .button {
+  margin-top: 30px;
+  padding: 15px;
+  color: #4a4a4a;
+  border: 1px solid #e8e8e8;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
 /* Product */
 .product {
   height: 777px;

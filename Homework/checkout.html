@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин</title>
+    <title>Фильтр товаров</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="single-product">
 
     <header>
         <div class="top-header">
@@ -237,209 +237,95 @@
             </div>
         </div>
     </header>
-
-    <section class="main-banner">
+    
+    <section class="breadcrumbs">
         <div class="container">
-
-            <div class="text-block">
-                <div class="tb_inner"><span class="bold">THE BRAND</span><br>OF LUXERIOUS <span class="pink">FASHION</span></div>
-            </div>
-
+            <div class="name pink">New Arrivals</div>
+            <div class="path">Home / Men / <span class="pink">New Arrivals</span></div>
         </div>
     </section>
 
-    <section class="pictures-block">
-        <div class="container">
-            <div class="column">
-
-                <div class="pb-pic men" style="background-image: url('img/pb-pic-2.png');">
-                    <div class="text">HOT DEAL<br><span class="pink pb-pink">FOR MEN</span></div>
-                </div>
-                
-                <div class="pb-pic access" style="background-image: url('img/pb-pic-wide.png');">
-                    <div class="text">LUXIROUS & TRENDY<br><span class="pink pb-pink">ACCESORIES</span></div>
-                </div>
-                
-            </div>
-
-            <div class="column">
-
-                <div class="pb-pic women" style="background-image: url('img/pb-pic-1.png');">
-                    <div class="text">30% OFF<br><span class="pink pb-pink">WOMEN</span></div>
-                </div>
-
-                <div class="pb-pic kids" style="background-image: url('img/pb-pic-3.png');">
-                    <div class="text">NEW ARRIVALS<br><span class="pink pb-pink">FOR KIDS</span></div>
-                </div>
-
-                
-            </div>
-
-        </div>
-
-    </section>
-        
-    <section class="featured-items">
+    <section class="checkout">
         <div class="container">
 
-            <div class="row column center">
-                <h2>Fetured Items</h2>
-
-                <p class="grey-text">Shop for items based on what we featured in this week</p>
-            </div>
-
-            <div class="row fi-items">
-
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/featured-1.png" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
+            <details open>
+                <summary>01. Shipping Adress</summary>
+                <div class="info">
+                    <div class="col">
+                        <div class="register">Check as a guest or register</div>
+                        <div class="register_desc">Register with us for future convenience</div>
+                        <div class="form-group">
+                            <input type="radio" id="id-1" name="radio">
+                            <label for="id-1">checkout as guest</label>
                         </div>
-                    </div>
-                    <div class="desc">
-                        <h4>Mango People T-shirt</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
-
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/featured-2.png" class="backgroud" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
+                        <div class="form-group">
+                            <input type="radio" id="id-2" name="radio">
+                            <label for="id-2">register</label>
                         </div>
-                    </div>
-                    <div class="desc">
-                        <h4>Mango People T-shirt</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
-
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/featured-3.jpg" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
+                        <div class="register two">register and save time!</div>
+                        <div class="register_desc">Register with us for future convenience</div>
+                        <div class="advan">
+                            <i class="fa fa-angle-double-right"></i>
+                            Fast and easy checkout
                         </div>
-                    </div>
-                    <div class="desc">
-                        <h4>Mango People T-shirt</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
-
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/featured-4.png" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
+                        <div class="advan">
+                            <i class=" fa fa-angle-double-right"></i>
+                            Easy access to your order history and status
                         </div>
+                        <a href="#" class="button">Continue</a>
                     </div>
-                    <div class="desc">
-                        <h4>Mango People T-shirt</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
-
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/featured-5.png" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
+                    <div class="col">
+                        <div class="register">Already registed?</div>
+                        <div class="register_desc">Please log in below</div>
+                        <div class="form-group text">
+                            <label for="">EMAIL ADDRESS <span>*</span></label>
+                            <input type="text">
                         </div>
-                    </div>
-                    <div class="desc">
-                        <h4>Mango People T-shirt</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
-
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/featured-6.png" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
+                        <div class="form-group text">
+                            <label for="">PASSWORD <span>*</span></label>
+                            <input type="text">
                         </div>
-                    </div>
-                    <div class="desc">
-                        <h4>Mango People T-shirt</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
 
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/featured-7.png" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
+                        <div class="req">
+                            * Required Fileds
                         </div>
-                    </div>
-                    <div class="desc">
-                        <h4>Mango People T-shirt</h4>
-                        <div class="price">$52.00</div>
-                    </div>
-                </div>
 
-                <div class="fi-item">
-                    <div class="fi-photo">
-                        <img src="img/featured-8.png" alt="">
-                        <div class="hover">
-                            <a href="#">Add to Cart</a>
+                        <div class="login_block">
+
+                            <a href="#" class="button">Log in</a>
+                            <a href="#" class="forgot">Forgot Password ?</a>
+
                         </div>
-                    </div>
-                    <div class="desc">
-                        <h4>Mango People T-shirt</h4>
-                        <div class="price">$52.00</div>
+
+                       
                     </div>
                 </div>
+            </details>
 
-            </div>
+            <details>
+                <summary>02. BILLING INFORMATION</summary>
+                <div class="info">Раскрывающийся текст</div>
+            </details>
 
-            <div class="fi-btn-all">
-                <a href="/HTML-CSS/Homework/product.html" class="btn btn-pink">Browse All Product <i class="fa fa-long-arrow-alt-right" aria-hidden="true"></i></a>
-            </div>
+            <details>
+                <summary>03. SHIPPING INFORMATION</summary>
+                <div class="info">Раскрывающийся текст</div>
+            </details>
 
+            <details>
+                <summary>04. SHIPPING METHOD</summary>
+                <div class="info">Раскрывающийся текст</div>
+            </details>
 
-        </div>
-    </section>
+            <details>
+                <summary>05. PAYMENT METHOD</summary>
+                <div class="info">Раскрывающийся текст</div>
+            </details>
 
-    <section class="advantages">
-        <div class="container">
-
-            <div class="col-left">
-                <div class="text-adv">30% <span
-                    class="pink">OFFER</span> 
-                    <br><span class="small">FOR WOMEN</span></div>
-            </div>
-
-            <div class="col-right">
-
-                <div class="advantage-item">
-                    <img src="img/advantage1.svg" alt="advantage1">
-                    <div class="advantage-item__text">
-                        <h2>Free Delivery</h2>
-                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </div>
-                </div>
-
-                <div class="advantage-item">
-                    <img src="img/advantage2.svg" alt="advantage2">
-                    <div class="advantage-item__text">
-                        <h2>Sales & discounts</h2>
-                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </div>
-                </div>
-
-                <div class="advantage-item">
-                    <img src="img/advantage3.svg" alt="advantage3">
-                    <div class="advantage-item__text">
-                        <h2>Quality assurance</h2>
-                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </div>
-                </div>
-
-            </div>
+            <details>
+                <summary>06. ORDER REVIEW</summary>
+                <div class="info">Раскрывающийся текст</div>
+            </details>
 
         </div>
     </section>
