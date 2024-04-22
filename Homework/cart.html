@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Фильтр товаров</title>
+    <title>Корзина товаров</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 </head>
@@ -245,87 +245,140 @@
         </div>
     </section>
 
-    <section class="checkout">
+    <section class="cart">
         <div class="container">
 
-            <details open>
-                <summary>01. Shipping Adress</summary>
-                <div class="info">
-                    <div class="col">
-                        <div class="register">Check as a guest or register</div>
-                        <div class="register_desc">Register with us for future convenience</div>
-                        <div class="form-group">
-                            <input type="radio" id="id-1" name="radio">
-                            <label for="id-1">checkout as guest</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="radio" id="id-2" name="radio">
-                            <label for="id-2">register</label>
-                        </div>
-                        <div class="register two">register and save time!</div>
-                        <div class="register_desc">Register with us for future convenience</div>
-                        <div class="advan">
-                            <i class="fa fa-angle-double-right"></i>
-                            Fast and easy checkout
-                        </div>
-                        <div class="advan">
-                            <i class=" fa fa-angle-double-right"></i>
-                            Easy access to your order history and status
-                        </div>
-                        <a href="#" class="button">Continue</a>
-                    </div>
-                    <div class="col">
-                        <div class="register">Already registed?</div>
-                        <div class="register_desc">Please log in below</div>
-                        <div class="form-group text">
-                            <label for="">EMAIL ADDRESS <span>*</span></label>
-                            <input type="text">
-                        </div>
-                        <div class="form-group text">
-                            <label for="">PASSWORD <span>*</span></label>
-                            <input type="text">
-                        </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Details</th>
+                        <th>unite Price</th>
+                        <th>Quantity</th>
+                        <th>shipping</th>
+                        <th>Subtotal</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="prod_details">
+                            <img src="img/cart-1.png" alt="">
+                            <div>
+                                <div class="name">Mango People T-shirt</div>
+                                <div class="params">
+                                    <ul>
+                                        <li>Color: <span>Red</span></li>
+                                        <li>Size: <span>Xll</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$150</td>
+                        <td>
+                            <input type="text" class="count_inp" value="2" maxlength="1">
+                        </td>
+                        <td>FREE</td>
+                        <td>$300</td>
+                        <td>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/>
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="prod_details">
+                            <img src="img/cart-2.png" alt="">
+                            <div>
+                                <div class="name">Mango People T-shirt</div>
+                                <div class="params">
+                                    <ul>
+                                        <li>Color: <span>Red</span></li>
+                                        <li>Size: <span>Xll</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$150</td>
+                        <td>
+                            <input type="text" class="count_inp" value="2" maxlength="1">
+                        </td>
+                        <td>FREE</td>
+                        <td>$300</td>
+                        <td>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/>
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="prod_details">
+                            <img src="img/cart-3.png" alt="">
+                            <div>
+                                <div class="name">Mango People T-shirt</div>
+                                <div class="params">
+                                    <ul>
+                                        <li>Color: <span>Red</span></li>
+                                        <li>Size: <span>Xll</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$150</td>
+                        <td>
+                            <input type="text" class="count_inp" value="2" maxlength="1">
+                        </td>
+                        <td>FREE</td>
+                        <td>$300</td>
+                        <td>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/>
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-                        <div class="req">
-                            * Required Fileds
+            <div class="button-row">
+                <a href="#" class="button">CLEAR SHOPPING CART</a>
+                <a href="#" class="button">CONTINUE SHOPPING</a>
+            </div>
+
+            <div class="credentials">
+                <div class="col">
+                    <div class="heading">Shipping Adress</div>
+                    <div class="content">
+                        <div class="select-wrapper">
+                            <select name="" id="">
+                                <option value="">Bangladesh</option>
+                            </select>
                         </div>
-
-                        <div class="login_block">
-
-                            <a href="#" class="button">Log in</a>
-                            <a href="#" class="forgot">Forgot Password ?</a>
-
-                        </div>
-
-                       
+                        <input type="text" placeholder="State">
+                        <input type="text" placeholder="Postcode / Zip">
+                        <a href="#" class="button">GET A QUOTE</a>
                     </div>
                 </div>
-            </details>
-
-            <details>
-                <summary>02. BILLING INFORMATION</summary>
-                <div class="info">Раскрывающийся текст</div>
-            </details>
-
-            <details>
-                <summary>03. SHIPPING INFORMATION</summary>
-                <div class="info">Раскрывающийся текст</div>
-            </details>
-
-            <details>
-                <summary>04. SHIPPING METHOD</summary>
-                <div class="info">Раскрывающийся текст</div>
-            </details>
-
-            <details>
-                <summary>05. PAYMENT METHOD</summary>
-                <div class="info">Раскрывающийся текст</div>
-            </details>
-
-            <details>
-                <summary>06. ORDER REVIEW</summary>
-                <div class="info">Раскрывающийся текст</div>
-            </details>
+                <div class="col">
+                    <div class="heading">coupon discount</div>
+                    <div class="content">
+                        <p>Enter your coupon code if you have one</p>
+                        <input type="text" placeholder="State">
+                        <a href="#" class="button">APPLY COUPON</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="total_wrapper">
+                        <div class="sub">Sub total <span>$900</span></div>
+                        <div class="grand">GRAND TOTAL <span>$900</span></div>
+                        <a href="#" class="button pink">proceed to checkout</a>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
