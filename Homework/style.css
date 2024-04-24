@@ -197,6 +197,23 @@ header .top-header {
   height: 100px;
   border-bottom: 1px solid #ececec;
 }
+header .mega-title {
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #222222;
+  border-bottom: 1px solid #e8e8e8;
+  margin: 10px 0;
+}
+header .mega-link {
+  display: block;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #646464;
+}
 header .form-search {
   width: 62%;
 }
@@ -218,14 +235,19 @@ header .form-search .search-container__block details {
 header .form-search .search-container__block details .popup {
   position: absolute;
   width: 200px;
-  height: 300px;
   background: #fff;
   border: 1px solid rgb(186, 183, 183);
   border-radius: 5px;
   left: 0px;
   top: 39px;
-  padding: 20px;
+  padding: 10px 20px;
   z-index: 100;
+}
+header .form-search .search-container__block details .popup h3 {
+  font-weight: 600;
+}
+header .form-search .search-container__block details .popup h3:first-child {
+  margin-top: 0;
 }
 header .form-search .search-container__block details summary {
   font-family: "Lato-Light";
@@ -330,23 +352,6 @@ header .bottom-header ul li .mega-box::before {
 header .bottom-header ul li .mega-box .mega-item {
   position: relative;
   width: 235px;
-}
-header .bottom-header ul li .mega-box .mega-title {
-  font-size: 14px;
-  line-height: 32px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-  color: #222222;
-  border-bottom: 1px solid #e8e8e8;
-  margin: 10px 0;
-}
-header .bottom-header ul li .mega-box .mega-link {
-  display: block;
-  line-height: 28px;
-  font-weight: 400;
-  letter-spacing: 0.025em;
-  color: #646464;
 }
 header .bottom-header ul li .mega-box .mega-pic {
   position: absolute;

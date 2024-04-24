@@ -179,6 +179,25 @@ header {
         border-bottom: 1px solid #ececec;
     }
 
+    .mega-title {
+        font-size: 14px;
+        line-height: 32px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: $black;
+        border-bottom: 1px solid $grey-light;
+        margin: 10px 0; 
+    }
+
+    .mega-link {
+        display: block;
+        line-height: 28px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #646464;
+    }
+
     .form-search {
         width: 62%;
     
@@ -200,14 +219,21 @@ header {
                     .popup {
                         position: absolute;
                         width: 200px;
-                        height: 300px;
                         background: #fff;
                         border: 1px solid rgb(186, 183, 183);
                         border-radius: 5px;
                         left: 0px;
                         top: 39px;
-                        padding: 20px;
+                        padding: 10px 20px;
                         z-index: 100;
+
+                        h3 {
+                            font-weight: 600;
+                        }
+
+                        h3:first-child {
+                            margin-top: 0;
+                        }
                     }
     
                     summary {
@@ -334,25 +360,6 @@ header {
                     .mega-item {
                         position: relative;
                         width: 235px;
-                    }
-    
-                    .mega-title {
-                        font-size: 14px;
-                        line-height: 32px;
-                        font-weight: 400;
-                        text-transform: uppercase;
-                        letter-spacing: 0.025em;
-                        color: $black;
-                        border-bottom: 1px solid $grey-light;
-                        margin: 10px 0; 
-                    }
-    
-                    .mega-link {
-                        display: block;
-                        line-height: 28px;
-                        font-weight: 400;
-                        letter-spacing: 0.025em;
-                        color: #646464;
                     }
     
                     .mega-pic {
