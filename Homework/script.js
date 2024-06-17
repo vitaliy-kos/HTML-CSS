@@ -3,7 +3,6 @@ const dataUrl = "data.json";
 async function fetchData(url) {
     try {
         const responce = await fetch(url);
-        console.log(responce);
         const data = await responce.json();
         return data;
     } catch (error) {
