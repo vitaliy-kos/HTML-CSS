@@ -31,7 +31,7 @@ function addToCart(product) {
     
     document.querySelector('.ci-items').insertAdjacentHTML('beforeend', generateProductCart(product));
     
-    createRemoveListner(document.querySelector(`.ci-item[data-id="${product.id}"]`));
+    createRemoveListner(document.querySelector(`.ci-item[data-id="${product.id}"] .remove`));
     document.querySelector('.cart-items').classList.add('visible');
 
     window.scrollTo({
